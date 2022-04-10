@@ -1,7 +1,7 @@
 {
   "name": "cnchar-data",
   "version": "1.0.0",
-  "description": "cnchar的字典库",
+  "description": "cnchar的资源库",
   "main": "index.js",
   "scripts": {},
   "bin": {
