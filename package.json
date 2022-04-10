@@ -1,0 +1,26 @@
+{
+  "name": "cnchar-data",
+  "version": "1.0.0",
+  "description": "cnchar的字典库",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "cnchar-serve": "bin/serve.js",
+    "cnchar-serve-prod": "bin/serve-prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cn-char/cnchar-data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cn-char/cnchar-data/issues"
+  },
+  "homepage": "https://github.com/cn-char/cnchar-data#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "gulp": "^4.0.2",
+    "lite-server": "^2.6.1"
+  }
+}
