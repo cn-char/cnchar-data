@@ -1,0 +1,13 @@
+{
+  "name": "cnchar-data-draw",
+  "version": "",
+  "author": "theajack",
+  "description": "",
+  "repository": "",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+  },
+  "devDependencies": {
+  }
+}
