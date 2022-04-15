@@ -45,3 +45,29 @@ cnchar-serve-prod
 import cnchar from 'cnchar';
 cnchar.setResourceBase('https://www.xxx.com/cnchar-data/')
 ```
+
+### 5. api
+
+```ts
+export const name: 'cnchar-data';
+
+export const words: {
+    dict: string;
+}
+
+export function serve(): void;
+
+export function build(): void;
+
+export default {
+    name,
+    words,
+    serve,
+    build,
+}
+```
+
+```js
+import {serve} from 'cnchar-data';
+serve();
+```

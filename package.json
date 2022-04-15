@@ -1,8 +1,9 @@
 {
   "name": "cnchar-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cnchar的资源库",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {},
   "bin": {
     "cnchar-serve": "bin/serve.js",
