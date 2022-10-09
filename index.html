@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cnchar-data server</title>
+    <style>
+        code{
+            white-space: pre;
+            font-family: Consolas, "Courier New", monospace;
+            color: #fff;
+            background-color: #444;
+            display: block;
+            overflow-x: auto;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>cnchar-data server </h3>
+    <div style="margin-bottom: 10px;">
+        <a href="/draw/一.json">Test Data</a>
+    </div>
+
+    <code>import cnchar from 'cnchar';
+cnchar.setResourceBase('http://localhost:<span id="port">3002</span>/')</code>
+    <script>
+        document.getElementById('port').innerText = location.port;
+    </script>
+</body>
+</html>

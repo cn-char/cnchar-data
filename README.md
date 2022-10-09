@@ -12,11 +12,27 @@ npm i cnchar-data -D
 
 ### 2. 运行
 
+首先配置 package.json scripts
+
+```
+{
+    ...,
+    "scripts": {
+        "cnchar-serve": "cnchar-serve 3002",
+        "cnchar-prod": "cnchar-serve-prod"
+    },
+}
+```
+
 运行一个本地的服务，端口可以自定义
 
 ```
-cnchar-serve [port]
+npm run cnchar-serve
 ```
+
+运行成功之后可以访问一下链接查看是否正确运行
+
+[http://localhost:3002/draw/一.json](http://localhost:3002/draw/一.json)
 
 ### 3. 开发环境使用
 
@@ -31,8 +47,8 @@ cnchar.setResourceBase('http://localhost:{port}/')
 
 请执行
 
-```js
-cnchar-serve-prod
+```
+npm run cnchar-prod
 ```
 
 会在项目根目录生成cnchar-data目录, 将改文件夹放置在您的http服务器中
@@ -55,7 +71,7 @@ export const words: {
     dict: string;
 }
 
-export function serve(): void;
+export function serve(port?: number): void;
 
 export function build(): void;
 
@@ -69,5 +85,24 @@ export default {
 
 ```js
 import {serve} from 'cnchar-data';
-serve();
+serve(port);
+```
+
+```js
+import {build} from 'cnchar-data';
+build();
+```
+
+### 6. 或者可以全局安装使用
+
+```
+npm i cnchar-data -g
+```
+
+```
+cnchar-serve [port]
+```
+
+```
+cnchar-serve-prod
 ```

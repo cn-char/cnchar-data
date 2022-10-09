@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const {server} = require('./lib');
+const {serve} = require('./lib');
 
-server();
+serve();
